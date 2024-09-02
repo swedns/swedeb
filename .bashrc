@@ -1,4 +1,4 @@
-# ~/.bashrc: executed by bash for non-login shells
+# ~/.bashrc
 
 # If not running interactively, don't do anything
 case $- in
@@ -28,7 +28,7 @@ CYAN="\\[\\e[1;36m\\]"
 WHITE="\\[\\e[1;37m\\]"
 ENDC="\\[\\e[0m\\]"
 
-# Set a two-line prompt. If accessing via ssh include 'ssh-session' message.
+# Set a two-line prompt
 [[ -n "$SSH_CLIENT" ]] && ssh_message="-ssh_session"
 PS1="${MAGENTA}\t ${GREEN}\u ${WHITE}at ${YELLOW}\h${RED}${ssh_message} ${WHITE}in ${BLUE}\w \n${CYAN}\$${ENDC} "
 
